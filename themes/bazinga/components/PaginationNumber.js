@@ -77,7 +77,7 @@ const PaginationNumber = ({ page, totalPage }) => {
               onInput={handleInputChange}></input>
             <div
               onClick={jumpToPage}
-              className='cursor-pointer hover:bg-indigo-600  dark:bg-[#1e1e1e] dark:hover:bg-customPurple-600 hover:text-white px-4 py-2 group-hover:px-2 group-hover:mx-1 group-hover:rounded bg-white'>
+              className='cursor-pointer hover:bg-customYellow-600  dark:bg-[#1e1e1e] dark:hover:bg-customPurple-600 hover:text-white px-4 py-2 group-hover:px-2 group-hover:mx-1 group-hover:rounded bg-white'>
               <ChevronDoubleRight className={'w-4 h-4'} />
             </div>
           </div>
@@ -153,7 +153,7 @@ function getPageElement(page, currentPage, pagePrefix) {
       passHref
       className={
         (selected
-          ? 'bg-indigo-600 dark:bg-customPurple-600 text-white '
+          ? 'bg-customYellow-600 dark:bg-customPurple-600 text-white '
           : 'dark:bg-[#1e1e1e] bg-white') +
         ' hover:border-customYellow-600 dark:hover:bg-customPurple-600 dark:border-gray-600 px-4 border py-2 rounded-lg drop-shadow-sm duration-200 transition-colors'
       }>
