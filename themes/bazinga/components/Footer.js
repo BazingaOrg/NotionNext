@@ -26,13 +26,17 @@ const Footer = () => {
       {/* 底部页面信息 */}
       <div
         id='footer-bottom'
-        className='w-full h-20 flex flex-col p-3 lg:flex-row justify-center px-6 items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
-        <div id='footer-bottom-left'>
-          <PoweredBy />
+        className='w-full flex flex-col p-3 justify-center items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
+        <div
+          id='footer-bottom-left'
+          className='flex flex-row justify-center items-center mb-2 gap-2'>
           <CopyRightDate />
+          <PoweredBy />
         </div>
 
-        <div id='footer-bottom-right'>
+        <div
+          id='footer-bottom-right'
+          className='flex flex-row justify-center items-center flex-wrap'>
           {siteConfig('BEI_AN') && (
             <>
               <i className='fas fa-shield-alt' />{' '}
