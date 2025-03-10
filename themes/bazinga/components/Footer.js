@@ -28,13 +28,6 @@ const Footer = () => {
         id='footer-bottom'
         className='w-full flex flex-col p-3 justify-center items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
         <div
-          id='footer-bottom-left'
-          className='flex flex-row justify-center items-center mb-2 gap-2'>
-          <CopyRightDate />
-          <PoweredBy />
-        </div>
-
-        <div
           id='footer-bottom-right'
           className='flex flex-row justify-center items-center flex-wrap'>
           {siteConfig('BEI_AN') && (
@@ -57,6 +50,13 @@ const Footer = () => {
           </span>
 
           {/* <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>{title} {siteConfig('BIO') && <>|</>} {siteConfig('BIO')}</h1> */}
+        </div>
+
+        <div
+          id='footer-bottom-left'
+          className='flex flex-row justify-center items-center mb-2 gap-2'>
+          <CopyRightDate />
+          <PoweredBy />
         </div>
       </div>
     </footer>
